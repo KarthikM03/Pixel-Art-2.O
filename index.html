@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="con">
+        <div>
+            <ul>
+                <li>Enter the No.of Row & Coloumns as input.</li>
+                <li>Click on the "<b>Start</b>" Button.</li>
+                <li>Choose Your Fav "<b>Color</b>" from the color box.</li>
+                <li>Hold Mouse Button and Move on the "<b>Grid box</b>" you want color it.</li>
+                <li>Double Click on the "<b>Grid box</b>" you want to remove Color.</li>
+                <li class="warning" >"Please Enter the Input between <b> 2 to 70</b>".</li>
+            </ul>
+        </div>
+        <div class="in">
+            <div class="m">
+                <input type="number" placeholder="Enter a number" name="" id="input">
+                <button class="btn 1" onclick="start()">Start</button>
+                <button class="btn 2" onclick="reset()">Reset</button>
+            </div>
+            <div class="n">
+                <input type="color" name="" id="color">
+            </div>
+        </div>
+        <div class="out">
+            <div class="rangee">
+                Size of Grid :
+                <input type="range" onchange="range()" name="" id="range" value="15" step="1" min="10" max="80"
+                    oninput="this.nextElementSibling.value = this.value">
+                <output class="outt"></output>
+            </div>
+            <div class="gridbox">
+                <div id="div1" class="c">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
